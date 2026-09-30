@@ -1,0 +1,8 @@
+nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+}
