@@ -1,0 +1,26 @@
+<?php
+
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>balie</title>
+    <link rel="stylesheet" href="balie.css">
+</head>
+<header>
+    <section>
+        <div class="header-inhoud">
+            <nav class="navigatie">
+                <ul>
+                    <li><a href="gevonden.html" id="nav-gev">Gevonden</a></li>
+                    <li><a href="vermist.html" id="nav-ver">Vermist</a></li>
+                    <li><a href="dit%20is%20van%20mij.html">Dit is van mij</a></li>
+                    <li><a href="balie.html">Balie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</header>
+<body>
+</body>
+</html>

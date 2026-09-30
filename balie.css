@@ -1,8 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: aqua;
+}
+.header-inhoud{
+    max-width: 1300px;
+    margin: auto;
+    padding: 22px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+body{
+    line-height: 5;
+}
 nav ul {
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 100px;
     list-style: none;
     flex-wrap: wrap;
+    font-size: 50px;
+}
+nav a{
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    padding: 5px 0;
+    color: darkorange;
+}
+nav a: :after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+
+nav a:hover{
+    color: green;
 }
