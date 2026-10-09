@@ -1,24 +1,22 @@
 <?php
 
 ?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>balie</title>
-    <link rel="stylesheet" href="balie.css">
-</head>
-<header>
-    <section>
-        <div class="header-inhoud">
-            <nav class="navigatie">
-                <ul>
-                    <li><a href="gevonden.html" id="nav-gev">Gevonden</a></li>
-                    <li><a href="vermist.html" id="nav-ver">Vermist</a></li>
-                    <li><a href="dit%20is%20van%20mij.html">Dit is van mij</a></li>
-                    <li><a href="balie.html">Balie</a></li>
-                </ul>
-            </nav>
+
+<nav class="navbar">
+    <div class="nav-container">
+
+        <title class="nav-logo">
+            Lost and Found
+        </title>
+
+        <div class="nav-links">
+            <a href="balie.php" class="nav-link active">Balie</a>
+
+            <a href="dit%20is%20van%20mij.html" class="nav-link">dit is van mij</a>
+
+            <a href="gevonden.html" class="nav-link">gevonden</a>
+
+            <a href="vermist.html" class="nav-link">vermist</a>
         </div>
-    </section>
-</header>
-<body>
+    </div>
+</nav>

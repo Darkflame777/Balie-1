@@ -1,49 +1,56 @@
-<?php ?>
+<?php
+
+
+$db = new PDO("sqlite:lostandfound.db");
+
+$db->exec("
+    CREATE TABLE IF NOT EXISTS lost_items (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        item TEXT,
+        lost_time TEXT,
+        contact TEXT
+    )
+");
+
+
+?>
 <?php include("header.php"); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>balie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lost and Found</title>
     <link rel="stylesheet" href="balie.css">
 </head>
 <body>
-<main>
-    <section>
-        <div class="containerform">
-            <from action="#" method="post">
-                <div class="vermist">
-                    <h2 class="title">dit ben ik kwijt</h2>
-                    <label for="wat ben je kwijt">wat ben je kwijt</label>
 
-                    <input
 
-                        type="text"
-                        id="wat ben je kwijt"
-                        name="wat ben je kwijt"
-                        placeholder="wat ben je kwijt"
-                        required
-                    >
-                </div>
-                <div class="vermist">
-                    <h2 class="title">waar ben je het verloren</h2>
-                    <label for="waar ben je het verloren">waar ben je het verloren</label>
+<div class="container">
+    <header>
+        <h1>lost and found</h1>
+    </header>
 
-                    <input
+    <section class="form-box">
+        <h2>Nieuw item toevoegen</h2>
 
-                        type="text"
-                        id="waar ben je het verloren"
-                        name="waar ben je het verloren"
-                        placeholder="waar ben je het verloren"
-                        required
-                    >
-                </div>
-                <button type="submit" class="knop">
-                    verzenden
-                </button>
-            </from>
-        </div>
+        <form id="itemForm">
+            <div class="form-row">
+                <input id="naam" type="text"
+                       placeholder="Naam" required>
+
+                <input id="categorie" type="text"
+                       placeholder="Categorie" required>
+
+                <input id="beschrijving" type="text"
+                       placeholder="Beschrijving" required>
+            </div>
+
+            <button class="add" type="submit">
+                versturen
+            </button>
+        </form>
     </section>
-</main>
+    <h2>Alle items</h2>
 </body>
 </html>
