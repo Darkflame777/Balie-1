@@ -1,17 +1,6 @@
 <?php
 
-
-$db = new PDO("sqlite:lostandfound.db");
-
-$db->exec("
-    CREATE TABLE IF NOT EXISTS lost_items (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        item TEXT,
-        lost_time TEXT,
-        contact TEXT
-    )
-");
-
+require 'db.php';
 
 ?>
 <?php include("header.php"); ?>
@@ -52,5 +41,19 @@ $db->exec("
         </form>
     </section>
     <h2>Alle items</h2>
+    <section class="items">
+<?php
+    $test = $db->query("
+    SELECT * FROM lost_items;
+    ")->fetchAll(PDO::FETCH_ASSOC);
+    ?>
+<div class="itemsrow">
+<?php
+    echo "<pre>\n";
+print_r($test);
+echo "</pre>\n";
+?>
+</div>
+    </section>
 </body>
 </html>

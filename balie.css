@@ -150,3 +150,20 @@ button.add:hover {
     color: #2563eb;
 }
 
+.items{
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px #0000000a;
+    margin-bottom: 35px;
+    display: gridd;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.itemsrow{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
