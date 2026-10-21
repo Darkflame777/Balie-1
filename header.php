@@ -1,7 +1,9 @@
 <?php
 
 ?>
-
+<head>
+    <link rel="stylesheet" href="header.css">
+</head>
 <nav class="navbar">
     <div class="nav-container">
 
