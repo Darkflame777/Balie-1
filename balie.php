@@ -1,18 +1,6 @@
 <?php
 
-
-$db = new PDO("sqlite:lostandfound.db");
-
-$db->exec("
-    CREATE TABLE IF NOT EXISTS lost_items (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        item TEXT,
-        lost_time TEXT,
-        contact TEXT
-    )
-");
-
-
+require 'db.php';
 ?>
 <?php include("header.php"); ?>
 <!DOCTYPE html>
@@ -33,24 +21,46 @@ $db->exec("
 
     <section class="form-box">
         <h2>Nieuw item toevoegen</h2>
-
-        <form id="itemForm">
+        <form action="opslaan.php" method="POST" id="itemForm">
             <div class="form-row">
-                <input id="naam" type="text"
-                       placeholder="Naam" required>
+                <input id="contact" name="contact" type="text"
+                       placeholder="contact" required>
 
-                <input id="categorie" type="text"
-                       placeholder="Categorie" required>
+                <input id="lost_time" name="lost_time" type="date"
+                       placeholder="lost_time" required>
 
-                <input id="beschrijving" type="text"
-                       placeholder="Beschrijving" required>
+                <input id="item" name="item" type="text"
+                       placeholder="item" required>
             </div>
 
             <button class="add" type="submit">
                 versturen
             </button>
         </form>
+
+
     </section>
     <h2>Alle items</h2>
+    <section class="items">
+        <div class="itemsrow">
+            <?php
+
+            $statement = $db->query("SELECT * FROM lost_items");
+            $items = $statement->fetchAll();
+
+            foreach ($items as $item) {
+
+                echo "<div class='echomaincontainer'>";
+                echo "<div class='echomain'>";
+                echo "<h2>Verloren voorwerp</h2>";
+                echo "<p>item: " . $item["item"] . "</p>";
+                echo "<p>tijd: " . $item["lost_time"] . "</p>";
+                echo "<p>contact: " . $item["contact"] . "</p>";
+                echo "</div>";
+                echo "</div>";
+            }
+            ?>
+        </div>
+    </section>
 </body>
 </html>

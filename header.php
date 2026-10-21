@@ -16,9 +16,9 @@
 
             <a href="dit%20is%20van%20mij.html" class="nav-link">dit is van mij</a>
 
-            <a href="gevonden.html" class="nav-link">gevonden</a>
+            <a href="gevonden.php" class="nav-link">gevonden</a>
 
-            <a href="vermist.html" class="nav-link">vermist</a>
+            <a href="vermist.php" class="nav-link">vermist</a>
         </div>
     </div>
 </nav>
