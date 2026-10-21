@@ -26,8 +26,8 @@ require 'db.php';
                 <input id="contact" name="contact" type="text"
                        placeholder="contact" required>
 
-                <input id="lost_time" name="lost_time" type="date"
-                       placeholder="lost_time" required>
+                <input id="lost_time" name="lost_time" type="text"
+                       placeholder="tijd" required>
 
                 <input id="item" name="item" type="text"
                        placeholder="item" required>
