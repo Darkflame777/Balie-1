@@ -49,9 +49,21 @@ require 'db.php';
     ?>
 <div class="itemsrow">
 <?php
-    echo "<pre>\n";
-print_r($test);
-echo "</pre>\n";
+
+$statement = $db->query("SELECT * FROM lost_items");
+$items = $statement->fetchAll();
+
+foreach ($items as $item) {
+
+    echo "<div class='echomaincontainer'>";
+    echo "<div class='echomain'>";
+    echo "<h2>Verloren voorwerp</h2>";
+    echo "<p>item: " . $item["item"] . "</p>";
+    echo "<p>tijd: " . $item["lost_time"] . "</p>";
+    echo "<p>contact: " . $item["contact"] . "</p>";
+    echo "</div>";
+    echo "</div>";
+}
 ?>
 </div>
     </section>
