@@ -1,7 +1,9 @@
 <?php
 
 ?>
-
+<head>
+    <link rel="stylesheet" href="header.css">
+</head>
 <nav class="navbar">
     <div class="nav-container">
 
@@ -10,9 +12,9 @@
         </title>
 
         <div class="nav-links">
-            <a href="balie.php" class="nav-link active">Balie</a>
+            <a href="balie.php" class="nav-link">Balie</a>
 
-            <a href="dit%20is%20van%20mij.html" class="nav-link">dit is van mij</a>
+            <a href="dit%20is%20van%20mij.php" class="nav-link">dit is van mij</a>
 
             <a href="gevonden.php" class="nav-link">gevonden</a>
 
