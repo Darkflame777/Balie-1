@@ -21,5 +21,6 @@
     </button>
 </form>
 </section>
+<?php require 'footer.php'; ?>
 </body>
 </html>

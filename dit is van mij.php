@@ -41,6 +41,6 @@
         <button type="submit">Versturen!</button>
     </form>
 </div>
-
+<?php require 'footer.php'; ?>
 </body>
 </html>

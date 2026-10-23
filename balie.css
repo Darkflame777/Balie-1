@@ -91,7 +91,6 @@ button.add:hover {
     transition: all 0.2s ease;
 }
 
-}
 .nav-logo:hover{
     background: #f1f5f9;
     color: #2563eb;
@@ -150,19 +149,175 @@ button.add:hover {
     color: #2563eb;
 }
 
-.items{
-    background: white;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 5px 20px #0000000a;
-    margin-bottom: 35px;
-    display: gridd;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
-.itemsrow{
+
+
+.itemsrow {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
 }
+
+.echomaincontainer {
+    min-width: 0;
+}
+
+.echomain {
+    background: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 180px;
+    height: 100%;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+
+}
+
+.echomain:hover {
+    border-color: #2563eb;
+    box-shadow: 0 5px 15px #2563eb25;
+    transform: translateY(-4px);
+}
+
+.echomain h2 {
+    font-size: 18px;
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.echomain p {
+    font-size: 15px;
+    margin: 10px 0;
+    color: #334155;
+}
+
+
+.item-form {
+    margin: 0;
+    min-width: 0;
+}
+
+.echomain {
+    width: 100%;
+    min-height: 180px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 20px;
+    background: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.echomain:hover {
+    border-color: #dc2626;
+    background: #fff7f7;
+    box-shadow: 0 5px 15px #00000015;
+    transform: translateY(-3px);
+}
+
+.echomain strong {
+    color: #2563eb;
+    font-size: 18px;
+}
+
+
+.echomaincontainer {
+    min-width: 0;
+}
+
+.popup-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.echomain {
+    display: block;
+    min-height: 180px;
+    padding: 20px;
+    background: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.echomain:hover {
+    border-color: #2563eb;
+    box-shadow: 0 5px 15px #2563eb25;
+    transform: translateY(-3px);
+}
+
+.bekijk-label {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-toggle:checked ~ .popup-overlay {
+    display: flex;
+}
+
+.popup-content {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 15px 50px #00000030;
+}
+
+.popup-content h2 {
+    color: #2563eb;
+}
+
+.popup-close {
+    display: block;
+    margin-top: 20px;
+    color: #2563eb;
+    cursor: pointer;
+    text-align: center;
+}
+
+.delete-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: #dc2626;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #b91c1c;
+}
+
 
