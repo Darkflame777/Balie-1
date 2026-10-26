@@ -76,25 +76,8 @@ button.add:hover {
 }
 
 
-.nav-logo{
-    background: #1d4ed8;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 11px 16px;
-    border-radius: 9px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    transition: all 0.2s ease;
-}
 
-.nav-logo:hover{
-    background: #f1f5f9;
-    color: #2563eb;
-}
+
 .navbar {
     background: #ffffff;
     border-bottom: 1px solid #e2e8f0;
