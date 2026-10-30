@@ -77,13 +77,3 @@ body {
     border-radius: 10px;
     line-height: 1.8;
 }
-
-@media (max-width: 600px) {
-    .opties {
-        flex-direction: column;
-    }
-
-    .welkom {
-        padding: 25px;
-    }
-}
