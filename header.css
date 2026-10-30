@@ -44,7 +44,6 @@
     font-size: 14px;
     font-weight: 600;
     color: #64748b;
-    transition: all 0.2s ease;
 }
 
 .nav-link span {
@@ -90,4 +89,17 @@
     .nav-link span {
         display: none;
     }
+}
+.title{
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.title:hover{
+    color: #1d4ed8;
+    background: #f1f5f9;
 }

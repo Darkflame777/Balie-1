@@ -6,11 +6,11 @@
 </head>
 <nav class="navbar">
     <div class="nav-container">
-
+<a class="title" href="index.php">
         <title class="nav-logo">
             Lost and Found
         </title>
-
+</a>
         <div class="nav-links">
             <a href="balie.php" class="nav-link">Balie</a>
 

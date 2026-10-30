@@ -159,3 +159,14 @@ media (max-width: 600px) {
         font-size: 16px;
     }
 }
+.delete-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: #dc2626;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}

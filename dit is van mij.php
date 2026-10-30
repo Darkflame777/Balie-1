@@ -37,8 +37,9 @@
         <h2>Ik kan bewijzen dat dit voorwerp van mij is</h2>
         <input type="text" id="bewijs" name="bewijs"
                placeholder="Vul hier in" required>
-
-        <button type="submit">Versturen!</button>
+        <?php
+       echo "<button type='submit' class='delete-button'>Versturen!</button>";
+        ?>
     </form>
 </div>
 <?php require 'footer.php'; ?>
