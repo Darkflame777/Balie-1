@@ -37,7 +37,7 @@
 .gevonden-container button {
     margin-top: 15px;
     padding: 12px;
-    background: #287a55;
+    background: #2563eb;
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,11 +45,11 @@
 }
 
 .gevonden-container button:hover {
-    background: #205f42;
+    background: #2563eb;
 }
 
 .succes {
-    color: green;
+    color: blue;
 }
 
 .fout {
